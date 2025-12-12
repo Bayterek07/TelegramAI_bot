@@ -14,7 +14,7 @@ from openai import OpenAI  # Требует установки: pip install open
 TOKEN = '8252000125:AAGy_Odrt7lFE3DXg2VU-5dWxvjcJhU7XnU' 
 
 # !!! ВАЖНО: ЗАМЕНИТЕ ЭТОТ API КЛЮЧ НА ВАШ, ЕСЛИ ОН ИЗМЕНИТСЯ !!!
-AI_API_KEY = "sk-PYddhAuW9Er6kFIAwqhpLY-TXiqegNWotBk4HUBKd541wJajoK1T9dUeEHoPfsgmb2m1ecmtH5GbGcJnZ6O57w"
+AI_API_KEY = "sk-7kndSEEJCeyq34QELNsEZnRNL0s9VfV9ou4QMSruv-GwW9PSYL45Cg1w5FdPBLZvhvjlBiz2ALQ9SfYY0Ij3bA"
 AI_BASE_URL = "https://api.langdock.com/openai/eu/v1"
 # ИЗМЕНЕНИЕ: Пробуем более мощную модель, чтобы исключить проблему с gpt-4o-mini
 AI_MODEL_NAME = "gpt-4o" 
@@ -79,4 +79,5 @@ async def main():
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
+
     asyncio.run(main())
